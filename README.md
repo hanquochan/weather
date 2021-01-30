@@ -30,32 +30,31 @@ Open Terminal, move to project source code directory and run command
   + Apply SOLID to the project.
 
 ## Folder structure
-+-- Models
-|   +-- Networking: Raw Model for networking example request, response
-|   +-- Weather: UI Models which are using for daily forecast feature
-+-- Views
-|   +-- Base: Base view 
-|   +-- Weather: View and cell which are using for daily forecast feature
-+-- ViewControllers
-|   +-- Base: Base view controller
-|   +-- Weather: View Controllers which are using for daily forecast feature
-+-- ViewModels
-|   +-- Base: Base view model
-|   +-- Weather: View Models which are using for daily forecast feature
-+-- Networking
-|   +-- WeatherAPIProvider: API provider associated with open weather api
-|   +-- WeatherAPITarget: API Target to config each request
-|   +-- ...
-+-- Helpers
-|   +-- Extensions: Extension categories
-|   |   +-- Extensions: Extension categories
-|   +-- Utility: Generic utility class
-+-- Configs: Config for api environment, default configs...
-+-- Constants: Constants which are using in ap to collect for localization, constant values...
-+-- Repository
-|   +-- WeatherProvider: Business layer to provider data for view model.
-|   +-- Caches: Caches for api.
-
+.
+├── Models/
+│   ├── Networking: Raw Model for networking example request, response
+│   └── Weather: UI Models which are using for daily forecast feature
+├── Views/
+│   ├── Base: Base view 
+│   └── Weather: View and cell which are using for daily forecast feature
+├── ViewControllers/
+│   ├── Base: Base view controller
+│   └── Weather: View Controllers which are using for daily forecast feature
+├── ViewModels/
+│   ├── Base: Base view model
+│   └── Weather: View Models which are using for daily forecast feature
+├── Networking/
+│   ├── WeatherAPIProvider: API provider associated with open weather api
+│   ├── WeatherAPITarget: API Target to config each request
+│   └── ...
+├── Helpers/
+│   ├── Extensions: Extension categories
+│   └── Utility: Generic utility class
+├── Config for api environment, default configs...
+├── Constants: Constants which are using in ap to collect for localization, constant values...
+└── Repository/
+    ├── WeatherProvider: Business layer to provider data for view model.
+    └── Caches: Caches for api.
 
 ##. Checklist:
 
