@@ -1,0 +1,8 @@
+//
+//  Dev.xcconfig
+//  MoneyForward
+//
+//  Created by Macintosh HD on 10/1/18.
+//  Copyright © 2018 Korea. All rights reserved.
+//
+API_ENVIRONMENT = dev

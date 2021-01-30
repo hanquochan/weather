@@ -1,0 +1,33 @@
+{
+  "dt": 1611723600,
+  "sunrise": 1611703021,
+  "sunset": 1611744890,
+  "temp": {
+    "day": 32.74,
+    "min": 23.26,
+    "max": 34.33,
+    "night": 25.37,
+    "eve": 28.47,
+    "morn": 23.26
+  },
+  "feels_like": {
+    "day": 34.14,
+    "night": 27.06,
+    "eve": 28.87,
+    "morn": 24.22
+  },
+  "pressure": 1011,
+  "humidity": 42,
+  "weather": [
+    {
+      "id": 802,
+      "main": "Clouds",
+      "description": "scattered clouds",
+      "icon": "03d"
+    }
+  ],
+  "speed": 2.06,
+  "deg": 359,
+  "clouds": 36,
+  "pop": 0
+}

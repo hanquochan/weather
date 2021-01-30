@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'NABCodingChallange' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for NABCodingChallange
+  pod 'Moya/RxSwift'
+  pod 'RxSwift' # Use the same RxSwift as for Moya.
+  pod 'RxCocoa'
+  pod 'TPKeyboardAvoiding'
+  pod 'SwiftyJSON'
+  pod 'SVProgressHUD'
+  target 'NABCodingChallangeTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'RxBlocking'
+    pod 'RxTest'
+
+  end
+
+  target 'NABCodingChallangeUITests' do
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,11 @@
+{
+  "id": 1580578,
+  "name": "Ho Chi Minh City",
+  "coord": {
+    "lon": 106.6667,
+    "lat": 10.8333
+  },
+  "country": "VN",
+  "population": 0,
+  "timezone": 25200
+}
