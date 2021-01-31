@@ -9,17 +9,21 @@
 import UIKit
 
 class WeatherAPICache {
-    var expireTime: TimeInterval  = 60 * 60
+    var expireTime: TimeInterval  = 60 * 60 {
+        didSet {
+            exipreTimer()
+        }
+    }
     private var caches: [String: Any]
     private var timer: Timer?
     let queue = DispatchQueue(label: "CacheQueue", attributes: .concurrent)
     
     init() {
         caches = [:]
-        updateCacheTimer()
+        exipreTimer()
     }
     
-    private func updateCacheTimer() {
+    private func exipreTimer() {
         timer?.invalidate()
         timer = nil
         timer = Timer.scheduledTimer(timeInterval: expireTime,

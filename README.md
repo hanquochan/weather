@@ -1,7 +1,7 @@
 # NAB Coding Challange
 ## I. Setup
 
-Open Terminal, move to project source code directory and run command
+Open Terminal, move to project source code directory `Sources` and run command
 
 `pod install`
 
@@ -32,7 +32,7 @@ Open Terminal, move to project source code directory and run command
 ## Folder structure
 ![Folder structure](img/structure.png)
 
-##. Checklist:
+## Checklist:
 
 1. [x] Programming language: Swift 
 2. [x] Design app's architecture: MVVM

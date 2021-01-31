@@ -34,7 +34,7 @@ class WeatherViewController: BaseViewController {
     }
     
     override func bindViewModel() {
-        let apiProvider = WeatherAPIProvider(plugins: [NetworkLoggerPlugin(), CachePolicyPlugin()])
+        let apiProvider = WeatherAPIProvider(plugins: [NetworkLoggerPlugin()])
         let cache = WeatherAPICache()
         let provider = WeatherProvider(apiProvider: apiProvider, cache: cache)
         viewModel = WeatherListViewModel(provider: provider)

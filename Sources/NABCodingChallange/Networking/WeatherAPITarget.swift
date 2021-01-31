@@ -14,7 +14,7 @@ enum WeatherAPITarget {
     case getDailyForcast(q: String, cnt: Int)
 }
 
-extension WeatherAPITarget: TargetType, CachePolicyGettable {
+extension WeatherAPITarget: TargetType {
     var baseURL: URL {
         return ApiConfig.defaultConfig.apiEnvironment.apiURL
     }
@@ -51,14 +51,5 @@ extension WeatherAPITarget: TargetType, CachePolicyGettable {
     
     var headers: [String: String]? {
         return nil
-    }
-    
-    var cachePolicy: URLRequest.CachePolicy {
-        switch self {
-        case .getDailyForcast:
-            return .useProtocolCachePolicy
-        default:
-            return .reloadIgnoringLocalCacheData
-        }
     }
 }
