@@ -30,7 +30,6 @@ class WeatherViewController: BaseViewController {
         searchController.searchBar.sizeToFit()
         tbView.tableHeaderView = searchController.searchBar
         tbView.tableFooterView = UIView()
-        self.title = Constants.LocalizedString.cancel
     }
     
     override func bindViewModel() {
