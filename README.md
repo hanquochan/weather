@@ -5,6 +5,8 @@ Open Terminal, move to project source code directory `Sources` and run command
 
 `pod install`
 
+Run test to see code coverage
+
 ## Dependencies
 
 * Moya: Most popular swift Network Abstraction Library. It provides us with an abstraction to make network calls without directly communicating with Alamofire. Also it supports stub and mock, very useful to write tests.
@@ -24,7 +26,8 @@ Open Terminal, move to project source code directory `Sources` and run command
   + Dependency Injection
   + Decorator
 + Best practices: 
-  + Always write test after finish one class. The code coverage is ~95%
+  + Always write test after finish one class. The code coverage is ~95% 
+  ![Coverage](img/coverage.png)
   + Acception test: Automation test covers almost cases.
   + Caching mechanism: Weather information is changed regularly so Time-based caching is a best option to cache api response. I'm using Ram to cache the response by key (combine api path, search term and cnt) in certain time (1 hour by default, configable). The provider will get result from cache first if any before call network to avoid generating a bunch of API requests.
   + Apply SOLID to the project.
